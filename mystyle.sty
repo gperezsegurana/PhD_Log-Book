@@ -1,0 +1,78 @@
+\ProvidesPackage{mystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[left=1.25in,right=1.25in,top=1.in,bottom=1.in]{geometry}
+
+\usepackage{subfiles}
+
+\usepackage{tikz}
+\usepackage{pgf}
+\usepackage{graphicx} 
+\usepackage{float}
+
+\usepackage[utf8]{inputenc} 
+\usepackage[english]{babel}
+
+\usepackage{xcolor} 
+\usepackage{proofread}
+
+\usepackage{multirow} 
+\usepackage{booktabs} 
+\usepackage{longtable} 
+
+\usepackage{todonotes}
+\presetkeys{todonotes}{figcolor=white}{}
+\usepackage{lipsum}
+
+\usepackage{hyperref}
+\usepackage{url}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{framed}
+\usepackage{fancyhdr}
+
+\usepackage[titletoc,toc,title]{appendix}
+
+
+\usepackage[backend=biber,style=numeric,sorting=none,citestyle=numeric-comp]{biblatex} %FB
+\DeclareSourcemap{
+ \maps[datatype=bibtex,overwrite=true]{
+  \map{
+    \step[fieldsource=Collaboration, final=true]
+    \step[fieldset=usera, origfieldval, final=true]
+  }
+ }
+}
+
+
+\usepackage{csquotes}
+
+\sethlcolor{yellow} 
+
+\linespread{1}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\newcommand{\eqplaceholder}{\begin{equation}
+\textrm{EQUATION PLACE HOLDER!!!}
+\end{equation}}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Command to make the lines in the title page
+\newcommand{\Lagr}{\mathcal{L}}
+
+\providecommand{\pfrac}[2]{\frac{\partial #1}{\partial #2 }}
+\providecommand{\ppfrac}[2]{\frac{\partial ^{2} #1}{\partial #2 ^{2}}}
+\providecommand{\pppfrac}[2]{\frac{\partial ^{3} #1}{\partial #2 ^{3}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\invisiblesection[1]{
+  \refstepcounter{section}
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
+  \sectionmark{#1}}
