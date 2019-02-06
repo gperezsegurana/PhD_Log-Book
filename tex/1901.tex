@@ -3,14 +3,93 @@
 Lectures, 2 on Short wavelenght accelerators, 1 on MAD-X.\\
 Add \verb|Needs["SDDS`"]| to mathematica initialization to handle SDDS files generated with \verb|sdds2math|\\
 
+
 \labday{Tuesday, 8th January 2019}
 
 \experiment{Meeting with Pete}
 \begin{itemize}
-    \item Write up a few pages on work done anazizing MAX-IV BC1 \& BC2
-    \item Take a look at litueature on LiTrack by Paul Emma @ SLAC (Download \& Play)
+    \item Write up a few pages on work done analyzing MAX-IV BC1 \& BC2
+    \item Take a look at literature on LiTrack by Paul Emma @ SLAC (Download \& Play)
     \item Study Peter's MMA notebooks on 1D tracking for PERLE \& UK-XFEL
     \item Read about short-range wakefields
     \item Learn from Andy Wolski notes \& book about ISR
     \item Ask for Matthew Sands SLAC note
+\end{itemize}
+Started writing ``report'' on MAX-IV BC1\\
+
+\labday{Wednesday, 9th January 2019}
+Write up of ``report'' on MAX-IV BC1\\
+Setup MatLab with LiTrack\\
+Got A. Wolski Book and notes\\
+
+
+\labday{Thursday, 10th January 2019}
+Reading Effects of Synchrotron Radiation (Chapter 7 of A. Wolski)\\
+
+
+\labday{Friday, 11th January 2019}
+Finished and wrote up analysis of MAZ-IV BC2\\
+Explored Pete's MMA traking notebooks\\
+Analysis of Jonas' BC1 Lattice\\
+
+\labday{Monday, 14th January 2019}
+Lectures. 2h on Short Wavelength Accelerators, 1 on MAD-X\\
+Analysis of Jonas' Max4 lattices\\
+
+
+\labday{Tuesday, 15th January 2019}
+Improved flexibility of elegant scripts and MMA analysis notebooks\\
+Started dissecting Igor's paper on \emph{Semi-analytical modeling of multistage bunch compression with collective effects}\\
+
+\labday{Wednesday, 16th January 2019}
+\emph{Semi-analytical modeling of multistage bunch compression with collective effects}\\
+
+\labday{Thursday, 17th January 2019}
+\emph{Semi-analytical modeling of multistage bunch compression with collective effects}\\
+Investigated design options to obtain a variable $R_{56}$ in Max-4 BC. \\
+\begin{itemize}
+    \item Add Quads such that dispersion is 0 at dipoles
+    \item Add Reverse bends to cancel $R_{56}$
+\end{itemize}
+\experiment{UK-XFEL WP3 meeting}
+
+\labday{Friday, 18th January 2019}
+\experiment{Meeting with Pete}
+Checked conceptual design changes to Max-4 BC\\
+Will investigate both cases altering the BeamLines with Mathematica and then generating Elegant and Mad8dl lattices to run simulations\\
+Once results are obtained from simulations, check:
+\begin{enumerate}
+    \item Is the new lattice \textbf{isochronus}?
+    \item Is the new lattice physical? (Non ridiculous 20T fields or overlaping elements)
+    \item Is it possible to have a continuous change of $R_{56}$ from current value to 0?
+\end{enumerate}
+Started playing with Mathematica in order to alter Lattices.
+
+\labday{Monday, 21st January 2019}
+
+Lectures. 3h on MAD-X\\
+
+\labday{Tuesday, 22nd January 2019}
+
+Re-designed Max4 BC1 with extra quads\\
+
+\labday{Wednesday, 23rd January 2019}
+
+Disecting Peter's examples using MMA to manipulate beamlines.\\
+Minimized $R_{56}$ in Max4 BC1, but need to handle $y$ dispersion. (will add defocusing quads making the arcs DBAs)\\
+A. Bainbridge seminar on the history of accelerator science and development at Daresbury\\
+
+
+\labday{Wednesday, 30th January 2019}
+
+\experiment{Meeting with Pete}
+\begin{itemize}
+    \item For additional quad scheme
+    \begin{itemize}
+        \item Can $R_{56}$ really be zero? (by miss-powering quads such that R56 from dispersion from within the dipoles cancels overall)
+        \item Can we make a halfway house between $R_{56} = +30$mm and \~ zero
+        \item Check dipole edge angles
+        \item Put it into a presentation
+        \item Reverse bend
+    \end{itemize}
 \end{itemize}
